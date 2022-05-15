@@ -1,0 +1,75 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/login/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "Login",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/inner/inner",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"onReachBottomDistance": 10
+            }
+        }
+        ,{
+            "path" : "pages/me/me",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/dateSearch/dateSearch",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"tabBar": {
+				"color":"#8a8a8a",
+				"selectedColor":"#00aa00",
+				"borderStyle":"black",
+				"backgroundColor":"#ffffff",
+				"list": [
+					{
+						"pagePath":"pages/dateSearch/dateSearch",
+						"text":"日期查找",
+						"iconPath":"./static/search.png",
+						"selectedIconPath":"./static/c_search.png"
+					},
+					{
+						"pagePath":"pages/inner/inner",
+						"text":"借用记录",
+						"iconPath":"./static/record.png",
+						"selectedIconPath":"static/c_record.png"
+					},
+					{
+						"pagePath":"pages/me/me",
+						"text":"我的",
+						"iconPath":"./static/edit.png",
+						"selectedIconPath":"./static/c_edit.png"
+					}
+				]	
+			 },
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus":{
+				"titleNView":false
+			}
+	}
+}
